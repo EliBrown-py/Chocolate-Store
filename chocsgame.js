@@ -115,7 +115,7 @@ const toggleDetails = () =>{
 };
 
 const highlightRandomChocolate = () =>{
-    $(".chocolateWrapper.box").css("background-color", "#FFFDD0");
+    $(".chocolateWrapper .box").css("background-color", "#FFFDD0");
     let randomIndex = Math.floor(Math.random() * 9);
     console.log(randomIndex);
     $(".chocolateWrapper .box:eq(" + randomIndex + ")").css(
