@@ -114,16 +114,15 @@ const toggleDetails = () =>{
     }
 };
 
-const highlightRandomChocolate = () =>{
-    $(".chocolateWrapper .box").css("background-color", "#FFFDD0");
-    let randomIndex = Math.floor(Math.random() * 9);
-    console.log(randomIndex);
-    $(".chocolateWrapper .box:eq(" + randomIndex + ")").css(
-        "background-color",
-        "#FFF985"
-    );
-
-    alert("Your free sample code is: "  + (randomIndex + 1)+" give this number to the cashier" );
-};
+const highlightRandomChocolate = () => {
+  $(".chocolateWrapper .box").css("background-color", "#fffdd0");
+  let randomIndex = Math.floor(Math.random() * chocs.length);
+  console.log(randomIndex);
+  $(".chocolateWrapper .box:eq(" + randomIndex + ")").css(
+      "background-color",
+      "#FFF985"
+  );
+  alert("Your free sample code is: " + (randomIndex + 1) + " give this number to the cashier");
+}
 
 $(document).ready(chocolatecontent);
